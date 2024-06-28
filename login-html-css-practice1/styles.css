@@ -1,0 +1,76 @@
+body {
+    background-color: black;
+}
+
+h2 {
+    color: lime;
+    text-align: center;
+    text-shadow: 0 0 10px lime;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+    border: 2px solid lime;
+    border-radius: 10px;
+    box-shadow: 0 0 50px lime;
+}
+
+label {
+    color: lime;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    /* border-top: 0.1px solid limegreen ;/* Borde superior */
+    /* border-right: 0.1px solid limegreen; Borde derecho */ 
+    background-color: black;
+    color: rgb(206, 198, 198);
+    outline: none;
+    border-left: 2px solid lime;  /* Borde izquierdo */
+    border-bottom: 2px solid lime; /* Borde inferior */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: rgb(217, 214, 217);
+    opacity: 0.6; /* Ajustar la opacidad si es necesario */
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+    border-left: 3px solid lime;  /* Aumenta el grosor del borde izquierdo */
+    border-bottom: 3px solid lime; /* Aumenta el grosor del borde inferior */
+    box-shadow: 2px 2px 5px rgba(0, 255, 0, 0.5); /* Efecto de iluminación */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    text-shadow: 0 0 1px lime; /* Efecto de iluminación sobre el texto */
+    border-color: lime; /* Cambia el color del borde al enfocar */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: lime;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: limegreen;
+    box-shadow: 0 0 10px limegreen, 0 0 20px limegreen, 0 0 30px limegreen;
+}
